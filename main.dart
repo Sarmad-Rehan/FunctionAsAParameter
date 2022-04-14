@@ -15,9 +15,13 @@ double add(double a, double b) {
   return a + b;
 }
 
-void displayResult(final f) {
-  double a = inputNum();
-  double b = inputNum();
+// void displayResult(double Function(double, double) func) {
+//   double a = inputNum();
+//   double b = inputNum();
 
-  print(f(a, b));
+//   print(func(a, b));
+// }
+
+void displayResult(final f) {
+  print(f(inputNum(), inputNum()));
 }
